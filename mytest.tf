@@ -32,7 +32,7 @@ resource "aws_instance" "test" {
 }
 
 
-resource "aws_ebs_volume" "esb1" {
+resource "aws_ebs_volume" "ebs1" {
   availability_zone = aws_instance.test.availability_zone
   size              = 1
   tags = {
